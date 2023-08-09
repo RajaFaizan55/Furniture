@@ -1,0 +1,22 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+.wholeMenuBar {
+  position: absolute;
+  top: 0;
+  left: 20px;
+  z-index: 1;
+  display: flex;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
