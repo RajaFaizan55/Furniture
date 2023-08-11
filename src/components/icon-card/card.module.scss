@@ -1,0 +1,16 @@
+.container {
+  padding: 10px;
+  background-color: #fff;
+  width: 120px;
+  height: 120px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.zoomIn {
+  transform: scale(1.1); /* Increase the scale to zoom in */
+}

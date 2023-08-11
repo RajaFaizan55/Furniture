@@ -1,5 +1,4 @@
 .container {
-  width: 100vw;
   height: 100vh;
   overflow: hidden;
   position: relative;
@@ -10,6 +9,25 @@
   left: 20px;
   z-index: 1;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  .menu {
+    display: flex;
+    text-decoration: none;
+    .activeClass {
+      color: #fff !important;
+      font-weight: 700;
+    }
+    p {
+      margin-right: 30px;
+      cursor: pointer;
+      color: black;
+      &:hover {
+        color: #fff;
+      }
+    }
+  }
 }
 
 .image {
