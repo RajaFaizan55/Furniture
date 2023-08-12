@@ -1,9 +1,8 @@
 import React, { useState } from "react";
 
 import style from "./card.module.scss";
-import ico from "../../assets/home-page/bed.png";
 
-const IconCard = () => {
+const IconCard = ({ title, img }) => {
   const [isHovered, setIsHovered] = useState(false);
 
   const handleHover = () => {
@@ -12,12 +11,16 @@ const IconCard = () => {
 
   return (
     <div
-      className={`${style.container} ${isHovered ? style.zoomIn : ""}`}
+      className={`${style.container} `}
       onMouseEnter={handleHover}
       onMouseLeave={handleHover}
     >
-      <img src={ico} />
-      <h3>Bed</h3>
+      <img
+        src={img}
+        alt="item img"
+        className={`${isHovered ? style.zoomIn : ""}`}
+      />
+      <h3>{title}</h3>
     </div>
   );
 };

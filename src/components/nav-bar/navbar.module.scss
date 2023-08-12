@@ -4,14 +4,17 @@
   position: relative;
 }
 .wholeMenuBar {
-  position: absolute;
+  position: fixed;
   top: 0;
-  left: 20px;
+  background-color: #3b3b3a;
   z-index: 1;
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  h1 {
+    margin: 0;
+  }
   .menu {
     display: flex;
     text-decoration: none;
@@ -20,6 +23,7 @@
       font-weight: 700;
     }
     p {
+      margin: 0;
       margin-right: 30px;
       cursor: pointer;
       color: black;

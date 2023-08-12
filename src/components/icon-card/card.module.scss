@@ -8,9 +8,22 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  transition: transform 0.3s ease-in-out;
-}
-
-.zoomIn {
-  transform: scale(1.1); /* Increase the scale to zoom in */
+  cursor: pointer;
+  border: 1px solid transparent;
+  &:hover {
+    background-color: #414040;
+    border: 1px solid #fff;
+    h3 {
+      color: #fff;
+    }
+  }
+  .zoomIn {
+    transform: scale(1.1); /* Increase the scale to zoom in */
+    transition: transform 0.3s ease-in-out;
+  }
+  h3 {
+    border-top: 1px solid;
+    width: 100%;
+    text-align: center;
+  }
 }

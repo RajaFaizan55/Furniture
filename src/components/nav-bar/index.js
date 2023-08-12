@@ -2,7 +2,7 @@ import React from "react";
 
 import bg from "../../assets/nav-bar/nav-bar-backgrounnd.png";
 import style from "./navbar.module.scss";
-import { Link, useParams, useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const NavBar = () => {
   const { pathname } = useLocation();
