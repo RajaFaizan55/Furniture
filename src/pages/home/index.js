@@ -14,6 +14,7 @@ import sideTableImg from "../../assets/home-page/side-table.png";
 import storageImg from "../../assets/home-page/storage.png";
 import woodenFloorImg from "../../assets/home-page/wooden-floor.png";
 import sofaImg from "../../assets/home-page/sofa.png";
+import CircularCard from "../../components/circular-card";
 
 const HomePage = () => {
   return (
@@ -33,7 +34,7 @@ const HomePage = () => {
         {allServices?.map((data, i) => {
           return (
             <div className={style.gridItems}>
-              <IconCard title={data.title} img={data.img} />
+              <CircularCard title={data.title} img={data.img} />
             </div>
           );
         })}
