@@ -3,7 +3,17 @@ import React from "react";
 import style from "./home.module.scss";
 import IconCard from "../../components/icon-card";
 import Container from "../../components/container";
-import sampleImg from "../../assets/home-page/bed.png";
+import singleImg from "../../assets/home-page/bed.png";
+import chairImg from "../../assets/home-page/chair.png";
+import deliveryImg from "../../assets/home-page/delivery.png";
+import dinningTableImg from "../../assets/home-page/dinning-table.png";
+import doubleBedImg from "../../assets/home-page/double-bed.png";
+import officeTableImg from "../../assets/home-page/office-table.png";
+import pcTableImg from "../../assets/home-page/pc-table.png";
+import sideTableImg from "../../assets/home-page/side-table.png";
+import storageImg from "../../assets/home-page/storage.png";
+import woodenFloorImg from "../../assets/home-page/wooden-floor.png";
+import sofaImg from "../../assets/home-page/sofa.png";
 
 const HomePage = () => {
   return (
@@ -35,22 +45,22 @@ const HomePage = () => {
 export default HomePage;
 
 const allProducts = [
-  { title: "Single Bed", img: sampleImg },
-  { title: "Double Bed", img: sampleImg },
-  { title: "Sofacum Bed ", img: sampleImg },
-  { title: "Office Chair", img: sampleImg },
-  { title: "PC Table", img: sampleImg },
-  { title: "Chair", img: sampleImg },
-  { title: "Side Table", img: sampleImg },
-  { title: "Dinning", img: sampleImg },
-  { title: "Office Table", img: sampleImg },
-  { title: "Table", img: sampleImg },
-  { title: "Storage", img: sampleImg },
-  { title: "Accessories", img: sampleImg },
+  { title: "Single Bed", img: singleImg },
+  { title: "Double Bed", img: doubleBedImg },
+  { title: "Sofa ", img: sofaImg },
+  { title: "Office Chair", img: chairImg },
+  { title: "PC Table", img: pcTableImg },
+  { title: "Chair", img: chairImg },
+  { title: "Side Table", img: sideTableImg },
+  { title: "Dinning", img: dinningTableImg },
+  { title: "Office Table", img: officeTableImg },
+  { title: "Table", img: pcTableImg },
+  { title: "Storage", img: storageImg },
+  { title: "Accessories", img: chairImg },
 ];
 const allServices = [
-  { title: "Maintenance", img: sampleImg },
-  { title: "Flooring", img: sampleImg },
-  { title: "Fit Out ", img: sampleImg },
-  { title: "Delivery", img: sampleImg },
+  { title: "Maintenance", img: singleImg },
+  { title: "Flooring", img: woodenFloorImg },
+  { title: "Fit Out ", img: sideTableImg },
+  { title: "Delivery", img: deliveryImg },
 ];

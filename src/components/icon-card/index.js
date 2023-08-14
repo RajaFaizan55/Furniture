@@ -18,6 +18,7 @@ const IconCard = ({ title, img }) => {
       <img
         src={img}
         alt="item img"
+        width={60}
         className={`${isHovered ? style.zoomIn : ""}`}
       />
       <h3>{title}</h3>
